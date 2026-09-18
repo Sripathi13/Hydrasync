@@ -3,6 +3,8 @@
  
  
  Flowdiagram : https://gitdiagram.com/sripathi13/hydrasync/
+
+ Workflow in Non Technical Perception : https://github.com/Sripathi13/Hydrasync/blob/main/workflow.png
 ## Overview
 
 HydraSync is an AI-powered water monitoring and leak detection system designed for industrial facilities. Using real-time sensor data, machine learning anomaly detection, and intelligent localization algorithms, HydraSync identifies water leaks with precision, quantifies financial impact in real-time, and provides actionable insights to prevent losses exceeding $50K+ annually per facility.
