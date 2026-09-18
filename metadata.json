@@ -1,0 +1,8 @@
+{
+  "name": "HYDRASYNC",
+  "description": "Industrial Water Network Monitoring & Intelligence Platform for real-time telemetry, leak localization, financial impact analysis, and scenario simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
