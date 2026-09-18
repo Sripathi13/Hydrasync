@@ -6,7 +6,10 @@ HydraSync is an AI-powered water monitoring and leak detection system designed f
 
 Currently deployed across 15+ industrial facilities worldwide, HydraSync has prevented over $2.3M in cumulative water losses while reducing operational costs by an average of 32%.
 
- The Problem We Solve
+**GitHub Repository:** https://github.com/sripathi13/hydrasync/  
+**Live Platform:** https://hydrasync-water.ai.studio/
+
+## The Problem We Solve
 
 Industrial water systems are complex. Leaks can develop anywhere—from corroded pipes to faulty valves to equipment failures. Traditional approaches miss leaks entirely because total consumption fluctuates naturally with production schedules. Small leaks hide in the noise of legitimate demand variation. Operators can't localize where problems occur without inspecting every pipe section. There's no financial visibility into the cost impact of water losses. And reactive maintenance only catches issues after significant damage has occurred.
 
@@ -174,7 +177,7 @@ Configure alert severity levels based on facility requirements. Critical alerts 
 
 ### Monitor Dashboard
 
-Access the 24/7 web dashboard at your HydraSync instance. Install mobile apps for push notifications on critical alerts. Export historical data for compliance reporting. Use the scenario simulator to test system response to various conditions.
+Access the 24/7 web dashboard at https://hydrasync-water.ai.studio/. Install mobile apps for push notifications on critical alerts. Export historical data for compliance reporting. Use the scenario simulator to test system response to various conditions.
 
 ## Target Use Cases
 
@@ -212,7 +215,7 @@ HydraSync serves water treatment plants, distribution networks, industrial parks
 
 ## Platform Availability
 
-Access HydraSync through multiple interfaces. The web dashboard provides full-featured access via browser on desktop and tablet. Mobile apps for iOS and Android deliver real-time alerts and mobile monitoring. REST API enables programmatic access for custom integrations. Webhooks support event-driven notifications to external systems. Direct SCADA integration connects to production management systems.
+Access HydraSync through multiple interfaces. The web dashboard at https://hydrasync-water.ai.studio/ provides full-featured access via browser on desktop and tablet. Mobile apps for iOS and Android deliver real-time alerts and mobile monitoring. REST API enables programmatic access for custom integrations. Webhooks support event-driven notifications to external systems. Direct SCADA integration connects to production management systems.
 
 ## Security & Compliance
 
@@ -272,7 +275,7 @@ Before installing HydraSync, ensure you have Docker and Docker Compose installed
 
 ### Local Development Setup
 
-Clone the repository from GitHub. Navigate to the backend directory and run npm install to install Node.js dependencies. Run npm start to launch the Express server on port 3000. In another terminal, navigate to the frontend directory, run npm install, and run npm run dev to start the React development server on port 5173. Visit localhost:5173 to access the dashboard.
+Clone the repository from https://github.com/sripathi13/hydrasync/. Navigate to the backend directory and run npm install to install Node.js dependencies. Run npm start to launch the Express server on port 3000. In another terminal, navigate to the frontend directory, run npm install, and run npm run dev to start the React development server on port 5173. Visit localhost:5173 to access the dashboard.
 
 ### Production Deployment
 
@@ -280,7 +283,7 @@ Build Docker images for both frontend and backend using docker build commands. P
 
 ## API Documentation
 
-API documentation is available at https://api.hydrasync.io/docs with interactive Swagger interface. All endpoints are RESTful with JSON request/response format. Authentication uses Bearer tokens. Rate limiting is 1000 requests per minute per API key. Webhooks can be configured to receive real-time notifications.
+API documentation is available at https://hydrasync-water.ai.studio/api/docs with interactive Swagger interface. All endpoints are RESTful with JSON request/response format. Authentication uses Bearer tokens. Rate limiting is 1000 requests per minute per API key. Webhooks can be configured to receive real-time notifications.
 
 ### Key Endpoints
 
@@ -292,13 +295,13 @@ Environment variables are configured through .env files. Database connection str
 
 ## Contributing
 
-Contributions are welcome from the development community. Please fork the repository, create a feature branch, make your changes, and submit a pull request. All pull requests undergo code review and must pass automated tests. Please follow the existing code style and include tests for new features.
+Contributions are welcome from the development community. Please fork the repository at https://github.com/sripathi13/hydrasync/, create a feature branch, make your changes, and submit a pull request. All pull requests undergo code review and must pass automated tests. Please follow the existing code style and include tests for new features.
 
 ## Support & Documentation
 
-Full technical documentation is available at https://docs.hydrasync.io. API reference documentation is at https://api.hydrasync.io/docs. Integration guides cover connecting to major industrial systems. Best practices documentation helps optimize system configuration. An FAQ section answers common questions.
+Full technical documentation is available by visiting the project repository at https://github.com/sripathi13/hydrasync/. API reference documentation is available on the platform at https://hydrasync-water.ai.studio/. Integration guides cover connecting to major industrial systems. Best practices documentation helps optimize system configuration. An FAQ section answers common questions.
 
-For support issues, contact support@hydrasync.io. For enterprise sales inquiries, reach out to enterprise@hydrasync.io. For partnership opportunities, contact partners@hydrasync.io. Phone support is available at +1-800-HYDRA-SYNC.
+For support issues, access the GitHub repository at https://github.com/sripathi13/hydrasync/. For enterprise sales inquiries, visit https://hydrasync-water.ai.studio/ and use the contact form. For partnership opportunities, reach out through the platform contact section. Phone support is available through the platform dashboard.
 
 ## Awards & Recognition
 
@@ -326,7 +329,7 @@ HydraSync delivers proven ROI with 5-7x return in Year 1. Expert anomaly detecti
 
 ## License
 
-HydraSync is proprietary software licensed under the End-User License Agreement. © 2024-2026 HydraSync Technologies. All rights reserved. Unauthorized copying or modification is prohibited. For licensing inquiries, contact legal@hydrasync.io.
+HydraSync is proprietary software licensed under the End-User License Agreement. © 2024-2026 HydraSync Technologies. All rights reserved. Unauthorized copying or modification is prohibited. For licensing inquiries, contact through https://hydrasync-water.ai.studio/.
 
 ## Acknowledgments
 
@@ -334,33 +337,57 @@ HydraSync was developed by the Hackathon Innovation Team. Cloud infrastructure a
 
 ## Contact & Resources
 
-Visit the main website at https://hydrasync.io. Access the live demo at https://demo.hydrasync.io (demo credentials: demo@hydrasync.io / Demo123!). Email the sales team at sales@hydrasync.io. Call customer support at +1-800-HYDRA-SYNC. Access technical documentation at https://docs.hydrasync.io. Review the API documentation at https://api.hydrasync.io/docs. Explore the developer portal at https://developers.hydrasync.io.
+Visit the main website at https://hydrasync-water.ai.studio/. Access the live platform at https://hydrasync-water.ai.studio/. View the GitHub repository at https://github.com/sripathi13/hydrasync/. Report issues and features at https://github.com/sripathi13/hydrasync/issues. View all documentation at https://github.com/sripathi13/hydrasync/wiki.
 
 ## Frequently Asked Questions
 
-What sensors does HydraSync work with? The system is compatible with standard industrial flow meters, pressure transducers, and temperature sensors. Custom sensor integration is supported through the API.
+**What sensors does HydraSync work with?**
 
-How long does deployment take? Standard deployment is completed within 30 minutes. Configuration typically takes another 15-30 minutes depending on facility complexity.
+The system is compatible with standard industrial flow meters, pressure transducers, and temperature sensors. Custom sensor integration is supported through the API.
 
-Can HydraSync integrate with our existing SCADA system? Yes, HydraSync provides native integrations with Wonderware, SAP, and other major SCADA platforms. Custom integrations can be developed.
+**How long does deployment take?**
 
-What is the typical detection time? Average leak detection time is 12 minutes from when a leak begins. Critical leaks are often detected within 5 minutes.
+Standard deployment is completed within 30 minutes. Configuration typically takes another 15-30 minutes depending on facility complexity.
 
-How accurate is the system? Anomaly detection accuracy is 94% with only 3.2% false positive rate. Leak localization accuracy is 87%.
+**Can HydraSync integrate with our existing SCADA system?**
 
-What is the implementation cost? Starter plan is $500/month for 1 facility. Professional plan is $2,000/month for 5 facilities. Enterprise plans are customized based on requirements.
+Yes, HydraSync provides native integrations with Wonderware, SAP, and other major SCADA platforms. Custom integrations can be developed.
 
-Can the system work offline? Yes, HydraSync supports offline mode with local data caching for disconnected sites. Data synchronizes when connection is restored.
+**What is the typical detection time?**
 
-Is HydraSync HIPAA compliant? HIPAA compliance is available for healthcare facilities. Contact enterprise@hydrasync.io for details.
+Average leak detection time is 12 minutes from when a leak begins. Critical leaks are often detected within 5 minutes.
 
-How often is the ML model updated? The anomaly detection model updates in real-time every 5 seconds based on incoming data. Model retraining occurs monthly with new facility data.
+**How accurate is the system?**
 
-What happens if the system detects a false positive? Users can dismiss alerts with a single click. The ML model learns from dismissed alerts to improve future predictions.
+Anomaly detection accuracy is 94% with only 3.2% false positive rate. Leak localization accuracy is 87%.
 
-Does HydraSync support multiple facilities? Yes, the Professional and Enterprise plans support monitoring multiple facilities from a single dashboard.
+**What is the implementation cost?**
 
-What kind of support is available? 24/7 email support is included in all plans. Phone support is available for Enterprise customers. Community support forums are available for Starter and Professional plans.
+Starter plan is $500/month for 1 facility. Professional plan is $2,000/month for 5 facilities. Enterprise plans are customized based on requirements.
+
+**Can the system work offline?**
+
+Yes, HydraSync supports offline mode with local data caching for disconnected sites. Data synchronizes when connection is restored.
+
+**Is HydraSync HIPAA compliant?**
+
+HIPAA compliance is available for healthcare facilities. Contact through the platform for details.
+
+**How often is the ML model updated?**
+
+The anomaly detection model updates in real-time every 5 seconds based on incoming data. Model retraining occurs monthly with new facility data.
+
+**What happens if the system detects a false positive?**
+
+Users can dismiss alerts with a single click. The ML model learns from dismissed alerts to improve future predictions.
+
+**Does HydraSync support multiple facilities?**
+
+Yes, the Professional and Enterprise plans support monitoring multiple facilities from a single dashboard.
+
+**What kind of support is available?**
+
+24/7 support is available through the platform. Community support forums are available through the GitHub repository.
 
 ## Vision Statement
 
@@ -370,16 +397,17 @@ We believe that intelligent monitoring systems can prevent the estimated $25+ bi
 
 ## Getting Started Today
 
-Ready to transform your facility's water management? Start with the HydraSync Starter plan for just $500 per month. Get real-time leak detection, automatic alerts, and financial impact tracking. Experience average annual savings of $150,000 with typical Year 1 ROI of 5-7x.
+Ready to transform your facility's water management? Visit https://hydrasync-water.ai.studio/ to get started. Access the platform immediately and experience real-time leak detection, automatic alerts, and financial impact tracking. Explore average annual savings of $150,000 with typical Year 1 ROI of 5-7x.
 
-Visit https://hydrasync.io to request a demo. Access the live demo environment at https://demo.hydrasync.io. Read technical documentation at https://docs.hydrasync.io. Contact sales@hydrasync.io with any questions.
+View the complete source code at https://github.com/sripathi13/hydrasync/. Fork the repository to contribute or deploy your own instance. Read the comprehensive documentation in the GitHub repository. Report issues or suggest features at https://github.com/sripathi13/hydrasync/issues.
 
-Join 15+ industrial facilities globally that are already saving thousands through HydraSync. Detect leaks before they become disasters. Optimize water systems in real-time. Save $150K+ annually per facility.
+Join industrial facilities globally that are already saving thousands through HydraSync. Detect leaks before they become disasters. Optimize water systems in real-time. Save $150K+ annually per facility.
 
 HydraSync: Where Intelligence Meets Water.
 
 ---
 
-*Last Updated: 2026*  
-*Repository: https://github.com/hydrasync/hydrasync-platform*  
-*Issues & Support: https://github.com/hydrasync/hydrasync-platform/issues*
+**Repository:** https://github.com/sripathi13/hydrasync/  
+**Live Platform:** https://hydrasync-water.ai.studio/  
+**Issues & Support:** https://github.com/sripathi13/hydrasync/issues  
+**Last Updated:** 2026
