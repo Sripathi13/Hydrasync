@@ -1,5 +1,6 @@
 # HydraSync - Industrial Water Network Leak Detection & Optimization Platform
  PPT Overview Link : https://github.com/Sripathi13/Hydrasync/blob/main/HydraSync-stops-industrial-water-loss-in-seconds.pptx.pptx
+ Flowdiagram : https://gitdiagram.com/sripathi13/hydrasync/
 ## Overview
 
 HydraSync is an AI-powered water monitoring and leak detection system designed for industrial facilities. Using real-time sensor data, machine learning anomaly detection, and intelligent localization algorithms, HydraSync identifies water leaks with precision, quantifies financial impact in real-time, and provides actionable insights to prevent losses exceeding $50K+ annually per facility.
