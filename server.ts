@@ -8,10 +8,15 @@ import { setupSocketIO } from './backend/websocket/socketHandler.ts';
 async function startServer() {
   const app = express();
   const server = http.createServer(app);
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   // JSON Body Parser
   app.use(express.json());
+
+  // Root healthcheck for Cloud Run probes
+  app.get('/health', (_req, res) => {
+    res.status(200).send('OK');
+  });
 
   // API routes FIRST
   app.use('/api', apiRouter);

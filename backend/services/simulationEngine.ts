@@ -184,10 +184,10 @@ class SimulationEngine {
 
     // Handle automated alert generation for pipe burst
     if (activeScenario?.id === 'pipe-burst-b') {
-      const hasCriticalAlert = this.alerts.some(
-        (a) => a.severity === 'critical' && a.section === 'B' && a.status === 'active'
+      const hasBurstAlert = this.alerts.some(
+        (a) => a.severity === 'critical' && a.section === 'B'
       );
-      if (!hasCriticalAlert) {
+      if (!hasBurstAlert) {
         const newAlert: AlertItem = {
           id: `ALT-CRIT-${Math.floor(1000 + Math.random() * 9000)}`,
           severity: 'critical',
@@ -408,6 +408,10 @@ class SimulationEngine {
     const alert = this.alerts.find((a) => a.id === id);
     if (alert) {
       this.alerts = this.alerts.filter((a) => a.id !== id);
+      // If dismissing a simulated pipe burst, stabilize the simulation back to normal
+      if (this.activeScenarioId === 'pipe-burst-b' && alert.section === 'B') {
+        this.applyScenario('normal');
+      }
       if (this.broadcaster) {
         this.broadcaster('alert:dismissed', { id });
       }
@@ -422,6 +426,10 @@ class SimulationEngine {
       alert.status = 'resolved';
       alert.resolvedAt = new Date().toLocaleTimeString();
       alert.resolvedBy = resolvedBy;
+      // When operator resolves the Section B rupture, physically isolate/repair the pipe and return to normal baseline
+      if (this.activeScenarioId === 'pipe-burst-b' && alert.section === 'B') {
+        this.applyScenario('normal');
+      }
       if (this.broadcaster) {
         this.broadcaster('alert:dismissed', { id, resolved: true, alert });
       }
@@ -440,6 +448,19 @@ class SimulationEngine {
       isApplied: s.id === id,
     }));
     this.activeScenarioId = id;
+
+    if (id === 'pipe-burst-b') {
+      // Clear previous resolved burst alerts so new scenario invocation creates one clean active alert
+      this.alerts = this.alerts.filter((a) => !(a.severity === 'critical' && a.section === 'B'));
+    } else if (id === 'normal') {
+      // Resolve any active critical burst alerts
+      this.alerts = this.alerts.map((a) => {
+        if (a.severity === 'critical' && a.section === 'B' && a.status === 'active') {
+          return { ...a, status: 'resolved', resolvedAt: new Date().toLocaleTimeString(), resolvedBy: 'Baseline Reset' };
+        }
+        return a;
+      });
+    }
 
     // Immediately trigger tick so dashboard and network reflect scenario state without waiting 5s!
     this.tick();
