@@ -49,6 +49,9 @@ class SimulationEngine {
     if (this.timer) return;
     const intervalMs = (this.settings.sensorUpdateIntervalSeconds || 5) * 1000;
     this.timer = setInterval(() => this.tick(), intervalMs);
+    if (this.timer && typeof this.timer === 'object' && 'unref' in this.timer) {
+      (this.timer as any).unref();
+    }
   }
 
   public stop() {
@@ -530,4 +533,6 @@ class SimulationEngine {
 }
 
 export const simulationEngine = new SimulationEngine();
-simulationEngine.start();
+if (typeof process !== 'undefined' && process.argv && !process.argv.some(a => a.includes('vite') || a.includes('esbuild') || a.includes('tsc'))) {
+  simulationEngine.start();
+}
